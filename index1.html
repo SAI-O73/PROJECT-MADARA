@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-MADARA</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    background:#f5f5f5;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(60px) scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+.main{
+    text-align:center;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+    background:rgb(214,34,34);
+    color:aliceblue;
+}
+
+.navi{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:15px;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    background:rgba(214,34,34,.95);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.a-e{
+    padding:10px 18px;
+    border:1px solid black;
+    border-radius:25px;
+    margin:5px;
+    box-shadow:0 6px black;
+    color:aliceblue;
+    background:rgb(248,125,2);
+    text-decoration:none;
+    transition:.4s;
+}
+
+.a-e:hover{
+    color:rgb(9,233,17);
+    transform:translateY(-5px);
+    box-shadow:0 12px 20px rgba(0,0,0,.4);
+}
+
+.main-left{
+    text-align:center;
+    padding:30px;
+}
+
+.im{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    border-radius:50%;
+    animation:appear 1s,float 4s ease-in-out infinite;
+}
+
+.main-right{
+    text-align:left;
+    padding:20px;
+    animation:appear 1s;
+}
+
+.heading{
+    text-align:center;
+    font-family:'Poppins',sans-serif;
+    padding:40px 0 20px;
+    text-decoration:underline;
+    animation:appear 1s;
+}
+
+.para{
+    padding:20px 30px;
+    font-family:'Poppins',sans-serif;
+    font-size:20px;
+    line-height:1.8;
+    animation:appear 1.2s;
+}
+
+.video{
+    text-align:center;
+    padding:30px;
+}
+
+.video1{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    border-radius:15px;
+    transition:.5s;
+    animation:appear 1.2s;
+}
+
+.video1:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 25px black;
+}
+
+.abo{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.insta{
+    width:60px;
+    height:60px;
+    transition:.4s;
+}
+
+.insta:hover{
+    transform:scale(1.2) rotate(10deg);
+}
+
+.marq{
+    background:#121010;
+    padding:25px;
+    color:white;
+    font-size:22px;
+}
+
+@media(max-width:992px){
+
+.navi{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.para{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navi{
+    flex-direction:column;
+    gap:10px;
+}
+
+.a-e{
+    width:180px;
+    text-align:center;
+}
+
+.heading{
+    font-size:30px;
+}
+
+.para{
+    font-size:17px;
+    padding:20px;
+}
+
+.im{
+    max-width:260px;
+}
+
+.video1{
+    max-width:100%;
+}
+
+.insta{
+    width:50px;
+    height:50px;
+}
+
+.marq{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:480px){
+
+.heading{
+    font-size:24px;
+}
+
+.para{
+    font-size:16px;
+}
+
+.im{
+    max-width:200px;
+}
+
+.a-e{
+    width:150px;
+    padding:8px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navi">
+            <a href='#home' class="a-e">HOME</a>
+            <a href="#story" class="a-e">STORY</a>
+            <a href="#video" class="a-e">VIDEO</a>
+            <a href="#contact" class="a-e">CONTACT</a>
+        </div>
+        <div class="main-left" id="home">            
+            <img  class="im"src=https://res.cloudinary.com/dfwengvew/image/upload/v1780502663/ChatGPT_Image_Jun_3_2026_09_33_22_PM_cxww0a.png>
+        </div>
+        <div class="main-right" id="story">
+            <h1 CLASS="heading">STORY</h1>
+            <p class="para">Madara Uchiha was born during the Warring States Era, a time when ninja clans constantly fought each other. As a child, he lost several brothers in battle, which made him dream of a peaceful world. During his youth, he became friends with Hashirama Senju, even though their clans were enemies. Both shared the same dream of ending war and protecting future generations from suffering. After years of conflict,Madara and Hashirama united their clans and founded Konohagakure, creating what would become one of the greatest ninja villages.
+
+              Although peace had finally arrived, Madara gradually lost faith in the village. He believed the Uchiha Clan would never be truly accepted and feared that Hashirama's vision would eventually fail. After leaving the village, he fought Hashirama in a legendary battle at the Valley of the End. Everyone believed Madara died, but he secretly survived and spent years working on a new plan to create peace. By combining his power with Hashirama's cells, he awakened the Rinnegan and became convinced that the only way to end suffering was to place the entire world under the Infinite Tsukuyomi, a powerful illusion where everyone could live in a perfect dream.
+
+              Before his death from old age, Madara manipulated Obito Uchiha into continuing his plan. Many years later, during the Fourth Great Ninja War, he was resurrected and displayed incredible power, defeating thousands of ninja and even the Five Kage. He eventually became the Ten-Tails' jinchūriki and succeeded in casting the Infinite Tsukuyomi. However, just as he achieved his goal, he was betrayed by Black Zetsu, who had secretly used him to revive Kaguya Ōtsutsuki. After Kaguya was defeated by Naruto and Sasuke, Madara returned in a weakened state and spent his final moments speaking with Hashirama. Realizing that his dream had failed and that he had been manipulated, Madara died peacefully beside his old friend and rival. His story is remembered as a tragic tale of a man who wanted peace but chose a path that ultimately led to destruction.
+
+            </p>
+        </div>
+        <div class="video" id="video">
+            <h1 class="heading">VIDEO</h1> 
+            <video class="video1" controls loop src='https://res.cloudinary.com/dfwengvew/video/upload/v1780556745/322_-_Madara_Uchiha_nyxwbv.mkv'></video>                                                                                                                                                                                                                                                                                                                                                                                                                           
+        </div> 
+        <div class="abo" id="contact">
+            <h1 class="heading">CONTACT</h1>
+            <a href="https://www.instagram.com/rowdysai_2112?igsh=MXViazVqeGYwYmttaQ%3D%3D">
+                <img class="insta" src="data:image/jpeg;base64,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">
+            </a>
+        
+        </div>
+        <div class="marq">
+            <marquee>THANK YOU FOR VISITING</marquee>
+        </div>
+    </div>
+</body>
+</html>
